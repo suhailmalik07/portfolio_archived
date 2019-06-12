@@ -15,8 +15,8 @@
 .navbar > div > ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    margin-top: 20px;
 }
 
 .navbar > div > ul > a > li {
@@ -59,7 +59,7 @@
 }
 
 .link-icons {
-    width: 300px;
+    width: 90%;
     display: flex;
     margin: 30px 0 10px;
     justify-content: space-around;
@@ -78,7 +78,6 @@
 .about {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/third.jpeg");
     background-attachment: fixed;
-    height: 650px;
     background-size: cover;
     color: white;
 }
@@ -94,29 +93,32 @@
     display: flex;
 }
 
-.about > h2 {
+.about{
     text-align: center;
 }
 .row {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
 }
 .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+    width: 50%;
+    margin-top: 30px;
 }
 #about-left > img {
-    width: 50%;
+    width: 40%;
     height: auto;
     align-self: center;
+    margin-bottom: 30px;
 }
 #about-right > p {
     margin: 10px 30px 0 0;
+}
+#about-right {
+    width: 50%;
+    text-align: left;
 }
 .skills {
     margin-top: 30px;
@@ -129,8 +131,8 @@
     margin-top: 10px;
 }
 .skill-container {
-    width: 70%;
-    align-self: center;
+    width: 80%;
+    margin: 0 auto;
 }
 .skill-container > div {
     margin-top: 10px;
@@ -182,4 +184,29 @@ footer {
 }
 footer > p {
     text-align: center;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .pic-info {
+        left: 20%;
+    }
+    .navbar {
+        background-color: #2C3335;
+        position: relative;
+    }
+    .navbar > div > ul {
+        justify-content: center;
+    }
+    .column {
+        width: 100%;
+    }
+    #about-right {
+        width: 100%;
+        margin: 20px 30px 40px;
+    }
+    #about-left > img {
+        width: 60%;
+    }
 }
