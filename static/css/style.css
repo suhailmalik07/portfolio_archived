@@ -28,7 +28,7 @@
 }
 
 .image-div {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("img/second.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/second.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 768px;
@@ -76,7 +76,7 @@
 }
 
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/third.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/third.jpeg");
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -160,11 +160,23 @@
     width: 70%;
     background-color: #2196F3;
 }
+#django {
+    width: 80%;
+    background-color: #2196F3;
+}
+#bootstrap {
+    width: 90%;
+    background-color: #2196F3;
+}
 .works {
     margin-top: 50px;
 }
 .img-div {
     text-align: center;
+}
+.img-div > a > img:hover {
+    transition-duration: 0.3s;
+    box-shadow: 0 10px 50px 5px rgba(188, 197, 216, 1);
 }
 .img-div > a > img {
     width: 70%;
