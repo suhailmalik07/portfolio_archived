@@ -75,11 +75,12 @@
 
 .link-icons a svg {
     width: 80%;
+    transition: 0.3s;
 }
 
 .link-icons > a > svg:hover {
-    transition-duration: 300ms;
     transform: scale(1.3);
+    transition: transform 0.3s;
 }
 
 .about {
@@ -181,14 +182,16 @@
 .img-div {
     text-align: center;
 }
-.img-div > a > img:hover {
-    transition-duration: 0.3s;
-    box-shadow: 0 10px 50px 5px rgba(188, 197, 216, 1);
-}
 .img-div > a > img {
     width: 70%;
     border: 2px ridge black;
     border-radius: 4px;
+    transition: 0.3s;
+}
+.img-div > a > img:hover {
+    margin-top: -8px;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.4);
+    transition: margin-top 0.3s, box-shadow 0.3s;
 }
 footer {
     background-color: #2C3335;
