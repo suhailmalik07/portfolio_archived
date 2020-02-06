@@ -9,11 +9,13 @@
 .navbar {
     width: 100%;
     position: fixed;
-    background: transparent;
+    transition: 0.4s;
+    top: 0;
 }
 .navbar-alt {
     width: 100%;
     position: fixed;
+    transition: 0.4s;
     background: linear-gradient(to right,
         rgba(249, 107, 142, 1),
         rgba(218,103,230,1),
@@ -67,7 +69,7 @@
 }
 
 .link-icons {
-    width: 90%;
+    width: 100%;
     display: flex;
     margin: 30px 0 10px;
     justify-content: space-around;
